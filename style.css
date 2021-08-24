@@ -1,0 +1,125 @@
+/*Geral*/
+html{
+    font-family: "Montserrat, sans-serif";
+}
+
+#app{
+    display: flex; /*Elementos ficam um ao lado do outro*/
+    flex-direction: column;
+}
+
+.panel{
+    margin: 10px;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+}
+
+/* Pontuação */
+
+.scores{
+    display: flex;
+}
+
+.score{
+    flex: 1; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.score h1{
+    font-weight: 400;
+    font-size: 1.8rem;
+}
+
+.life-bar{
+    display: flex;
+    height: 20px;
+    width: 80%;
+    border: 1px solid black;
+}
+
+.life-bar .life {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    background-color: green;
+}
+
+.life-bar .life.danger{
+    background-color: red;
+}
+
+/*Área dos resultados */
+.win{
+    color: blue;
+    font-weight: 500 ;
+}
+
+.panel.result{
+    display: flex;
+    justify-content: center;
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+
+.result .lose{
+    color: red;
+    font-weight: 500;
+}
+
+/*Área dos Botões*/
+.buttons{
+    display: flex;
+    justify-content: center;
+}
+.btn {
+    padding: 5px 10px;
+    margin: 0px 10px;
+    border-radius: 5px;
+    font-size: 1.1rem;
+} 
+.attack{
+    background-color: rgba(243, 36, 36, 0.877);
+    color: white;
+}
+.new-game{
+    background-color: #4253af;
+    color: white;
+}
+.especial-attack{
+    background-color: #ff9800;
+    color: #fff;
+}
+.give-up{
+    background-color: #BBB;
+    color: #000;
+}
+.heal{
+    background-color: #259b24;;
+    color: white;
+}
+
+/*Logs dos ataques*/
+.monster{
+    background-color: #4253af;
+    border: 1px solid;
+    color: #fff;
+    display: flex;
+    padding: 2px 5px;
+    margin: 2px;
+}
+.player{
+    background-color: rgba(243, 36, 36, 0.877);
+    border: 1px solid;
+    color: #fff;
+    display: flex;
+    padding: 2px 5px;
+    margin: 2px;
+}
+
+
+
+
+

@@ -1,125 +1,129 @@
 /*Geral*/
-html{
-    font-family: "Montserrat, sans-serif";
+html {
+  font-family: "Montserrat, sans-serif";
 }
 
-#app{
-    display: flex; /*Elementos ficam um ao lado do outro*/
-    flex-direction: column;
+body {
+  background-image: url(img/game.jpg);
+  height: 100%;
+  color: #fff;
+  z-index: 1;
+}
+#app {
+  display: flex; /*Elementos ficam um ao lado do outro*/
+  flex-direction: column;
 }
 
-.panel{
-    margin: 10px;
-    padding: 10px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+.panel {
+  margin: 10px;
+  padding: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
 }
 
 /* Pontuação */
 
-.scores{
-    display: flex;
+.scores {
+  display: flex;
 }
 
-.score{
-    flex: 1; 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.score {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.score h1{
-    font-weight: 400;
-    font-size: 1.8rem;
+.score h1 {
+  font-weight: 400;
+  font-size: 1.8rem;
 }
 
-.life-bar{
-    display: flex;
-    height: 20px;
-    width: 80%;
-    border: 1px solid black;
+.life-bar {
+  display: flex;
+  height: 20px;
+  width: 80%;
+  border: 1px solid #fff;
 }
 
 .life-bar .life {
-    display: flex;
-    justify-content: center;
-    height: 100%;
-    background-color: green;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  background-color: green;
 }
 
-.life-bar .life.danger{
-    background-color: red;
+.life-bar .life.danger {
+  background-color: red;
 }
 
 /*Área dos resultados */
-.win{
-    color: blue;
-    font-weight: 500 ;
+.win {
+  color: blue;
+  font-weight: 500;
 }
 
-.panel.result{
-    display: flex;
-    justify-content: center;
-    font-size: 1.3rem;
-    font-weight: 400;
+.panel.result {
+  display: flex;
+  justify-content: center;
+  font-size: 1.3rem;
+  font-weight: 400;
 }
 
-.result .lose{
-    color: red;
-    font-weight: 500;
+.result .lose {
+  color: red;
+  font-weight: 500;
 }
 
 /*Área dos Botões*/
-.buttons{
-    display: flex;
-    justify-content: center;
+.buttons {
+  display: flex;
+  justify-content: center;
 }
 .btn {
-    padding: 5px 10px;
-    margin: 0px 10px;
-    border-radius: 5px;
-    font-size: 1.1rem;
-} 
-.attack{
-    background-color: rgba(243, 36, 36, 0.877);
-    color: white;
+  padding: 5px 10px;
+  margin: 0px 10px;
+  border-radius: 5px;
+  font-size: 1.1rem;
 }
-.new-game{
-    background-color: #4253af;
-    color: white;
+.attack {
+  background-color: rgba(243, 36, 36, 0.877);
+  color: white;
 }
-.especial-attack{
-    background-color: #ff9800;
-    color: #fff;
+.new-game {
+  background-color: #4253af;
+  color: white;
 }
-.give-up{
-    background-color: #BBB;
-    color: #000;
+.especial-attack {
+  background-color: #ff9800;
+  color: #fff;
 }
-.heal{
-    background-color: #259b24;;
-    color: white;
+.give-up {
+  background-color: #bbb;
+  color: #000;
+}
+.heal {
+  background-color: #259b24;
+  color: white;
+  list-style-type: none;
+  border: 1px solid #fff;
+  margin-left: 2px;
 }
 
 /*Logs dos ataques*/
-.monster{
-    background-color: #4253af;
-    border: 1px solid;
-    color: #fff;
-    display: flex;
-    padding: 2px 5px;
-    margin: 2px;
+.monster {
+  background-color: #4253af;
+  border: 1px solid;
+  color: #fff;
+  display: flex;
+  padding: 2px 5px;
+  margin: 2px;
 }
-.player{
-    background-color: rgba(243, 36, 36, 0.877);
-    border: 1px solid;
-    color: #fff;
-    display: flex;
-    padding: 2px 5px;
-    margin: 2px;
+.player {
+  background-color: rgba(243, 36, 36, 0.877);
+  border: 1px solid;
+  color: #fff;
+  display: flex;
+  padding: 2px 5px;
+  margin: 2px;
 }
-
-
-
-
-
